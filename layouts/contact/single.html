@@ -1,0 +1,28 @@
+{{ define "main" }}
+<section id="contact" class="text-center">
+  <div class="container">
+    <h2 class="section-title">お問い合わせ</h2>
+    <p class="section-subtitle">
+      ご質問やご相談がございましたら、以下のフォームよりお気軽にご連絡ください。
+    </p>
+
+    <div class="row justify-content-center">
+      <div class="col-md-8">
+        <form id="contactForm">
+          <div class="form-group mb-3">
+            <input type="text" class="form-control" id="name" placeholder="お名前" required>
+          </div>
+          <div class="form-group mb-3">
+            <input type="email" class="form-control" id="email" placeholder="メールアドレス" required>
+          </div>
+          <div class="form-group mb-3">
+            <textarea class="form-control" id="message" rows="5" placeholder="メッセージ" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-lg">送信</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+{{ end }}

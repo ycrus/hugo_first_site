@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  {{ partial "head.html" . }}
+</head>
+
+<body>
+  <!-- CSS Loaded Indicator -->
+  <div class="css-loaded">CSS Loaded ✓</div>
+
+  <div id="all">
+    <!-- Navbar -->
+    <header class="navbar-fixed-top">
+      <div class="navbar navbar-default" role="navigation" id="navbar">
+        <div class="container">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="/">
+              <i class="fas fa-rocket"></i> Sola.com
+            </a>
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navigation">
+              <span class="sr-only">Toggle Navigation</span>
+              <i class="fas fa-bars"></i>
+            </button>
+          </div>
+
+          <div class="navbar-collapse collapse" id="navigation">
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="{{ "/" | relURL }}">Home</a></li>
+              <li><a href="{{ "/about/" | relURL }}">About</a></li>
+              <li><a href="{{ "/services/" | relURL }}">Services</a></li>
+              <li><a href="{{ "/portfolio/" | relURL }}">Portfolio</a></li>
+              <li><a href="{{ "/contact/" | relURL }}">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Dynamic content -->
+    <main>
+      {{ block "main" . }}{{ end }}
+    </main>
+
+    <!-- Footer -->
+    <footer id="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <p>&copy; {{ now.Format "2006" }} {{ .Site.Title }}. All rights reserved.</p>
+            <p>
+              Template by <a href="https://bootstrapious.com/universal-business-e-commerce-template" style="color: #667eea;">Bootstrapious</a>.
+              Ported to Hugo by <a href="https://github.com/devcows/hugo-universal-theme" style="color: #667eea;">DevCows</a>.
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <!-- Back to Top Button -->
+  <button class="back-to-top">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+
+  <!-- Scripts -->
+  <script src="//code.jquery.com/jquery-3.1.1.min.js" crossorigin="anonymous"></script>
+  <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" crossorigin="anonymous"></script>
+  <script src="/js/custom.js"></script>
+</body>
+</html>

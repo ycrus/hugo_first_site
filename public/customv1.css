@@ -246,3 +246,32 @@
                 max-width: 300px;
             }
         }
+
+        /* Services Section */
+#services {
+  background: #f8f9fa;
+}
+
+#services h2 {
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+#services p {
+  font-size: 16px;
+  color: #666;
+}
+
+.service-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 12px;
+}
+
+.service-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12);
+}
+
+.service-icon {
+  font-size: 40px;
+}

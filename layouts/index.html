@@ -1,127 +1,50 @@
-<!DOCTYPE html>
-<html lang="en-us">
+{{ define "main" }}
+<section id="home" class="hero-section">
+  <div class="hero-background"></div>
+  <div class="hero-overlay"></div>
 
-<head>
+  <!-- Floating Particles -->
+  <div class="particle"></div>
+  <div class="particle"></div>
+  <div class="particle"></div>
 
-    {{ partial "head.html" . }}
-   
-</head>
-
-<body>
-    <!-- CSS Loaded Indicator -->
-    <div class="css-loaded">CSS Loaded ✓</div>
-    
-    <div id="all">
-        <!-- Navbar -->
-        <header class="navbar-fixed-top">
-            <div class="navbar navbar-default" role="navigation" id="navbar">
-                <div class="container">
-                    <div class="navbar-header">
-                        <a class="navbar-brand" href="/">
-                            <i class="fas fa-rocket"></i> Hugo Site
-                        </a>
-                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navigation">
-                            <span class="sr-only">Toggle Navigation</span>
-                            <i class="fas fa-bars"></i>
-                        </button>
-                    </div>
-
-                    <div class="navbar-collapse collapse" id="navigation">
-                        <ul class="nav navbar-nav navbar-right">
-                            <li><a href="#home">Home</a></li>
-                            <li><a href="#about">About</a></li>
-                            <li><a href="#services">Services</a></li>
-                            <li><a href="#portfolio">Portfolio</a></li>
-                            <li><a href="#contact">Contact</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </header>
-
-        <!-- Hero Section -->
-        <section id="home" class="hero-section">
-            <div class="hero-background"></div>
-            <div class="hero-overlay"></div>
-            
-            <!-- Floating Particles -->
-            <div class="particle"></div>
-            <div class="particle"></div>
-            <div class="particle"></div>
-            
-            <div class="hero-content">
-                <h1>ようこそ！</h1>
-                <p>これはカスタムホームページです。</p>
-                <p class="hero-description">
-                    Discover the power of static site generation with Hugo. Create beautiful, 
-                    lightning-fast websites that scale effortlessly and deliver exceptional user experiences.
-                </p>
-                <div class="hero-buttons">
-                    <a href="#about" class="btn-hero btn-hero-primary">Get Started</a>
-                    <a href="#portfolio" class="btn-hero btn-hero-secondary">View Portfolio</a>
-                </div>
-            </div>
-        </section>
-
-        <!-- Content Section -->
-        <section id="about" class="content-section">
-            <div class="container">
-                <div class="section-title">
-                    <h2>About Our Site</h2>
-                    <p>Learn more about what makes this Hugo site special and how it can help you achieve your goals.</p>
-                </div>
-                <div class="row">
-                    <div class="col-md-4 text-center">
-                        <div style="margin-bottom: 30px;">
-                            <i class="fas fa-bolt" style="font-size: 3rem; color: #667eea; margin-bottom: 20px;"></i>
-                            <h3>Lightning Fast</h3>
-                            <p>Built with Hugo for optimal performance and speed. Your visitors will love the quick loading times.</p>
-                        </div>
-                    </div>
-                    <div class="col-md-4 text-center">
-                        <div style="margin-bottom: 30px;">
-                            <i class="fas fa-mobile-alt" style="font-size: 3rem; color: #667eea; margin-bottom: 20px;"></i>
-                            <h3>Responsive Design</h3>
-                            <p>Looks great on all devices. From desktop to mobile, your content adapts perfectly to any screen size.</p>
-                        </div>
-                    </div>
-                    <div class="col-md-4 text-center">
-                        <div style="margin-bottom: 30px;">
-                            <i class="fas fa-shield-alt" style="font-size: 3rem; color: #667eea; margin-bottom: 20px;"></i>
-                            <h3>Secure & Reliable</h3>
-                            <p>Static sites are inherently more secure and reliable. No databases or server-side vulnerabilities.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Footer -->
-        <footer id="footer">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <p>&copy; 2025 My New Hugo Site. All rights reserved.</p>
-                        <p>
-                            Template by <a href="https://bootstrapious.com/universal-business-e-commerce-template" style="color: #667eea;">Bootstrapious</a>.
-                            Ported to Hugo by <a href="https://github.com/devcows/hugo-universal-theme" style="color: #667eea;">DevCows</a>.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </footer>
+  <div class="hero-content text-center">
+    <h1>ようこそ！</h1>
+    <p>これはカスタムホームページです。</p>
+    <p class="hero-description">
+      Discover the power of static site generation with Hugo. Create beautiful, 
+      lightning-fast websites that scale effortlessly and deliver exceptional user experiences.
+    </p>
+    <div class="hero-buttons">
+      <a href="{{ "/about/" | relURL }}" class="btn-hero btn-hero-primary">Get Started</a>
+      <a href="{{ "/portfolio/" | relURL }}" class="btn-hero btn-hero-secondary">View Portfolio</a>
     </div>
+  </div>
+</section>
 
-    <!-- Back to Top Button -->
-    <button class="back-to-top">
-        <i class="fas fa-chevron-up"></i>
-    </button>
-
-    <!-- Scripts -->
-    <script src="//code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
-    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
-
-    <script src="/js/custom.js"></script>
-   
-</body>
-</html>
+<section id="about" class="content-section">
+  <div class="container">
+    <div class="section-title">
+      <h2>About Our Site</h2>
+      <p>Learn more about what makes this Hugo site special and how it can help you achieve your goals.</p>
+    </div>
+    <div class="row">
+      <div class="col-md-4 text-center">
+        <i class="fas fa-bolt fa-3x mb-3 text-indigo-500"></i>
+        <h3>Lightning Fast</h3>
+        <p>Built with Hugo for optimal performance and speed. Your visitors will love the quick loading times.</p>
+      </div>
+      <div class="col-md-4 text-center">
+        <i class="fas fa-mobile-alt fa-3x mb-3 text-indigo-500"></i>
+        <h3>Responsive Design</h3>
+        <p>Looks great on all devices. From desktop to mobile, your content adapts perfectly to any screen size.</p>
+      </div>
+      <div class="col-md-4 text-center">
+        <i class="fas fa-shield-alt fa-3x mb-3 text-indigo-500"></i>
+        <h3>Secure & Reliable</h3>
+        <p>Static sites are inherently more secure and reliable. No databases or server-side vulnerabilities.</p>
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}
