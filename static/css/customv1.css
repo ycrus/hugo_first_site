@@ -288,6 +288,13 @@
   color: #555;
 }
 
+#about button {
+  border-radius: 25px;
+  padding: 12px 40px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
 /* Responsif untuk layar kecil */
 @media (max-width: 768px) {
   .about-section .row {
@@ -306,6 +313,7 @@
     margin: 0 auto;
   }
 }
+
 
 
 /* Services Section */

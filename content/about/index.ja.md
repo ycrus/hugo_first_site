@@ -2,6 +2,10 @@
 title= "自己紹介"
 date= 2025-09-02
 draft= false
+
+[[buttons]]
+    label= "お問い合わせ"
+    url= "/contact/"
 +++
 
 # 自己紹介
@@ -9,8 +13,7 @@ draft= false
 私たちは、Hugo を利用してモダンで高速なウェブサイトを構築する開発チームです。  
 シンプルな運用と優れたパフォーマンスを通じて、最高のユーザー体験を提供することを目指しています。
 
-- 🚀 Lightning Fast  
-- 📱 Responsive Design  
-- 🔒 Secure & Reliable  
+- 🚀 高速なパフォーマンス 
+- 📱 レスポンシブデザイン
+- 🔒 安全で信頼性の高い 
 
-[Contact Us](/contact/)

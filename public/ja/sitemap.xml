@@ -90,5 +90,9 @@
                 hreflang="ja"
                 href="http://localhost:1313/ja/tags/"
                 />
+  </url><url>
+    <loc>http://localhost:1313/ja/en/</loc>
+  </url><url>
+    <loc>http://localhost:1313/ja/ja/</loc>
   </url>
 </urlset>

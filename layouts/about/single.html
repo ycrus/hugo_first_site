@@ -9,6 +9,15 @@
       </div>
       <div class="col-md-6">
         {{ .Content }}
+        <div class="button">
+        {{ with .Params.buttons }}
+            {{ range . }}
+            <a href="{{ .url | relLangURL }}">
+                {{ .label }}
+            </a>
+            {{ end }}
+        {{ end }}
+    </div>
       </div>
     </div>
   </div>
