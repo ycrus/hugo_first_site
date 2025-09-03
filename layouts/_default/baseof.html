@@ -26,15 +26,24 @@
 
           <div class="navbar-collapse collapse" id="navigation">
             <ul class="nav navbar-nav navbar-right">
-              <li><a href="{{ "/" | relURL }}">Home</a></li>
-              <li><a href="{{ "/about/" | relURL }}">About</a></li>
-              <li><a href="{{ "/services/" | relURL }}">Services</a></li>
-              <li><a href="{{ "/portfolio/" | relURL }}">Portfolio</a></li>
-              <li><a href="{{ "/contact/" | relURL }}">Contact</a></li>
+                    {{ range .Site.Menus.main }}
+                <li><a href="{{ .URL | relLangURL }}">{{ .Name }}</a></li>
+                    {{ end }}
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                  {{ .Site.Language.LanguageName }} <b class="caret"></b>
+                </a>
+                <ul class="dropdown-menu">
+                  {{ range $.Translations }}
+                    <li><a href="{{ .RelPermalink }}">{{ .Site.Language.LanguageName }}</a></li>
+                  {{ end }}
+                </ul>
+              </li>
             </ul>
           </div>
         </div>
       </div>
+    
     </header>
 
     <!-- Dynamic content -->

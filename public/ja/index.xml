@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ようこそ on My New Hugo Site</title>
+    <link>http://localhost:1313/ja/</link>
+    <description>Recent content in ようこそ on My New Hugo Site</description>
+    <generator>Hugo</generator>
+    <language>ja</language>
+    <lastBuildDate>Tue, 02 Sep 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/ja/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>サービス</title>
+      <link>http://localhost:1313/ja/services/</link>
+      <pubDate>Tue, 02 Sep 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ja/services/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>ポートフォリオ</title>
+      <link>http://localhost:1313/ja/portfolio/</link>
+      <pubDate>Tue, 02 Sep 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ja/portfolio/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>お問い合わせ</title>
+      <link>http://localhost:1313/ja/contact/</link>
+      <pubDate>Tue, 02 Sep 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ja/contact/</guid>
+      <description>&lt;p&gt;ご質問やご相談がございましたら、以下のフォームよりお気軽にご連絡ください。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>自己紹介</title>
+      <link>http://localhost:1313/ja/about/</link>
+      <pubDate>Tue, 02 Sep 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ja/about/</guid>
+      <description>&lt;h1 id=&#34;自己紹介&#34;&gt;自己紹介&lt;/h1&gt;&#xA;&lt;p&gt;私たちは、Hugo を利用してモダンで高速なウェブサイトを構築する開発チームです。&lt;br&gt;&#xA;シンプルな運用と優れたパフォーマンスを通じて、最高のユーザー体験を提供することを目指しています。&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;🚀 Lightning Fast&lt;/li&gt;&#xA;&lt;li&gt;📱 Responsive Design&lt;/li&gt;&#xA;&lt;li&gt;🔒 Secure &amp;amp; Reliable&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://localhost:1313/ja/contact/&#34;&gt;Contact Us&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

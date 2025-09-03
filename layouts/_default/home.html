@@ -9,20 +9,21 @@
   <div class="particle"></div>
 
   <div class="hero-content text-center">
-    <h1>ようこそ！</h1>
-    <p>これはカスタムホームページです。</p>
-    <p class="hero-description">
-      Discover the power of static site generation with Hugo. Create beautiful, 
-      lightning-fast websites that scale effortlessly and deliver exceptional user experiences.
-    </p>
+     <h1>{{ .Title }}</h1>
+        {{ .Content }}
     <div class="hero-buttons">
-      <a href="{{ "/about/" | relURL }}" class="btn-hero btn-hero-primary">Get Started</a>
-      <a href="{{ "/portfolio/" | relURL }}" class="btn-hero btn-hero-secondary">View Portfolio</a>
+        {{ with .Params.buttons }}
+            {{ range . }}
+            <a href="{{ .url | relLangURL }}" class="btn-hero btn-hero-{{ .style }}">
+                {{ .label }}
+            </a>
+            {{ end }}
+        {{ end }}
     </div>
   </div>
 </section>
 
-<section id="about" class="content-section">
+<!-- <section id="about" class="content-section">
   <div class="container">
     <div class="section-title">
       <h2>About Our Site</h2>
@@ -46,5 +47,5 @@
       </div>
     </div>
   </div>
-</section>
+</section> -->
 {{ end }}
